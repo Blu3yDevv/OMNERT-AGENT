@@ -1,0 +1,26 @@
+models:
+  primary: "llama-3.3-70b-versatile"
+  fast: "mixtral-8x7b-32768"
+  reasoning: "llama-3.3-70b-versatile"
+  creative: "gemma2-9b-it"
+  
+search:
+  provider: "tavily"
+  max_results: 5
+  include_domains: []
+  exclude_domains: []
+  
+reasoning:
+  max_depth: 3
+  enable_self_verification: true
+  confidence_threshold: 0.7
+  
+memory:
+  enabled: true
+  max_messages: 20
+  summary_frequency: 5
+  
+logging:
+  level: "INFO"
+  file: "omnert_agent.log"
+  enable_tracing: false
